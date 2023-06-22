@@ -1,0 +1,26 @@
+.floating-social-bar {
+    position: fixed;
+    display: flex;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+}
+.social-media-icons{
+    flex: 1;
+    justify-content: center ;
+}
+.floating-social-bar ul {
+    list-style-type: none;
+}
+.floating-social-bar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff; /* Use a dynamic value for icon color */
+}
+
+.floating-social-bar i {
+    /* margin-right: 5px; */
+}
