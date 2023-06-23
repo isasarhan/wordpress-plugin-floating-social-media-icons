@@ -100,7 +100,7 @@ class FloatingSocial
     {
         $id = $args['id'];
         $name = get_option('fsb_social_media_name_' . $id, '');
-        echo '<input type="text" id="fsb_social_media_name_' . $id . '" name="fsb_social_media_name_' . $id . '"  value="' . esc_attr($name) . ' " />';
+        echo '<input type="text" id="fsb_social_media_name_' . $id . '" name="fsb_social_media_name_' . $id . '"  value="' . esc_attr($name) . '" />';
     }
     // for social media link
     function fsb_social_media_link($args)
@@ -155,7 +155,7 @@ class FloatingSocial
     {
         $error = false;
         // protect from external attacks or access from other than admin
-        if (!wp_verify_nonce($_POST['ourNonce'], 'saveFilterWords') or !current_user_can('manage_options'))
+        if (!wp_verify_nonce($_POST['ourNonce'], 'saveIcons') or !current_user_can('manage_options'))
             return;
         for ($i = 1; $i <= 5; $i++) {
             // if name is written the use chose to add the icon
